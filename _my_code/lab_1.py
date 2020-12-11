@@ -1,3 +1,10 @@
+# Richard Farr
+# December 11th, 2020
+# PDX Code Guild
+# Programming 102
+# Lab 1
+
+
 """
     Title: Rock, Paper, Scissors
     Description: Let's play rock, paper scissors
