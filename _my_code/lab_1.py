@@ -19,10 +19,13 @@ choices = ["rock", "paper", "scissors"]
 # This is our main loop, It will continue to run our game until we break out of it
 while True:
     # Printing a welcome message everytime our game loops
+    print(" ") # add another empty line so easier to read
     print("Welcome to Rock, Paper, Scissors. Type 'done' at any time to exit")
 
     # Choosing a random option from our choices for the computer
     computer = random.choice(choices)
+    # print("") # add empty line so easier to read
+    print("computer is: " + computer) # make the game easier to win
 
     user = ""
     # Continue looping while the user has not made a valid selection
@@ -38,8 +41,8 @@ while True:
         break
 
     # if the user and computer are the same it is a tie
-    if users == computer:
-        print("Looks like a tie"
+    if user == computer: # 1 - users to user
+        print("Looks like a tie") # 2 add )
 
     # check all cases if user is rock
     elif user == "rock":
@@ -49,14 +52,14 @@ while True:
             print("You win!")
 
         # check losing case
-        elif computer == "rock":
+        elif computer == "paper": # 3 change rock to paper
             print("Sorry, You lose.")
 
     # check all cases if user is paper
     elif user == "paper":
 
         # check winning case
-        if computer == "rock"
+        if computer == "rock": # 4 add :
             print("You win!")
 
         # check losing case
@@ -72,4 +75,4 @@ while True:
 
         # check losing case
         elif computer == "rock":
-            Print("Sorry, You lose.")
+            print("Sorry, You lose.") # 5 P to p on print
