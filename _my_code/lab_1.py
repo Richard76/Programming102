@@ -20,7 +20,7 @@ while True:
     user = ""
     # Continue looping while the user has not made a valid selection
     while user not in choices:
-        user = input("Choose either 'rock', 'paper', or 'scissors': ").lower()
+        user = input("Choose either 'rock', 'paper', or 'scissors'").lower()
 
         # if the user types done, we want to stop asking them
         if user == "done":
@@ -31,8 +31,8 @@ while True:
         break
 
     # if the user and computer are the same it is a tie
-    if user == computer:
-        print("Looks like a tie")
+    if users == computer:
+        print("Looks like a tie"
 
     # check all cases if user is rock
     elif user == "rock":
@@ -49,7 +49,7 @@ while True:
     elif user == "paper":
 
         # check winning case
-        if computer == "rock":
+        if computer == "rock"
             print("You win!")
 
         # check losing case
