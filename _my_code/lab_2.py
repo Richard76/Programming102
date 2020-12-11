@@ -31,6 +31,7 @@ def subtract(num1, num2):
 
 
 while True:
+    print(" ") # start off with an empty line
     operation = input("what is the operation you would like to perform? (choose + or - or done to quit) ")
 
     if operation != "done":
