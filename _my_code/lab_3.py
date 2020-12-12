@@ -22,6 +22,12 @@ Allow the user to also enter the units. Then depending on the units, convert the
 1 mi is 1609.34 m
 1 m is 1 m
 1 km is 1000 m
+
+Version 3
+Add support for yards, and inches.
+
+1 yard is 0.9144 m
+1 inch is 0.0254 m
 '''
 def main():
 
