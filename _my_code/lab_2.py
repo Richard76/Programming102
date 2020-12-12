@@ -29,10 +29,18 @@ def subtract(num1, num2):
     total = num1 - num2
     return total
 
+def multiply(num1, num2):
+    total = num1 * num2
+    return total
+
+def divide(num1, num2):
+    total = num1 / num2
+    return total
+
 
 while True:
     print(" ") # start off with an empty line
-    operation = input("what is the operation you would like to perform? (choose + or - or done to quit) ")
+    operation = input("what is the operation you would like to perform? (choose +, -, *, / or done to quit) ")
 
     if operation != "done":
         number1 = question1()
@@ -42,6 +50,12 @@ while True:
             print(f"{number1} {operation} {number2} = {result} ")
         elif operation == "-":
             result = subtract(number1, number2)
+            print(f"{number1} {operation} {number2} = {result} ")
+        elif operation == "*":
+            result = multiply(number1, number2)
+            print(f"{number1} {operation} {number2} = {result} ")
+        elif operation == "/":
+            result = divide(number1, number2)
             print(f"{number1} {operation} {number2} = {result} ")
         else:
             print("thats not a supported operation at this time")
