@@ -1,6 +1,6 @@
 # Richard Farr
 # PDX Code Guild 
-# Day 2 - Lab 2
+# Day 2 - Lab 3
 # 12/29/2020
 
 # Lab 3: Unit Converter
