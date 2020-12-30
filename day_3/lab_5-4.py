@@ -27,11 +27,17 @@ Do not create your profile with the user's username as the key and their passwor
 'gandalfTheGrey':'noneShallPass'
 '''
 
-profile = {
-    # 'gandalfTheGrey': 'noneShallPass!',
+profile_1 = {
     'username': 'Richard',
     'password': 'Farr'
 }
+
+profile_2 = {
+    'username': 'Mike',
+    'password': 'Jones'
+}
+
+profiles = [profile_1, profile_2]
 
 
 '''
@@ -102,12 +108,16 @@ If their login is unsuccessful, ask if they'd like to try again.
 
 
 def login(username_attempt, password_attempt):
-    if username_attempt == profile['username'] and password_attempt == profile['password']:
-        # print("Good, your login was successful")
-        return True
+    count = 0
+    for profile in profiles:
+        if (username_attempt == profile['username'] and password_attempt == profile['password']):
+            count = count + 1
+
+    if count >= 1:
+        return True  
     else:
-        # print("Sorry, at least one of those was incorrect")
         return False
+            
 
 
 login_attempts = 0
